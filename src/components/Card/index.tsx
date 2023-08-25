@@ -8,9 +8,9 @@ export const Card = ({ data, titulo, mensagem }: ICard) => {
   return (
     <S.Aside>
       <h3>
-        <strong>Data: </strong> {data}
+        <strong>Ligue:0800 4002-8922 </strong> {data}
       </h3>
-      <h4>Título: {titulo}</h4>
+      <h4>Para  {titulo}</h4>
       <p>Mensagem: {mensagem}</p>
     </S.Aside>
   );

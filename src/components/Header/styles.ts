@@ -2,6 +2,14 @@ import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyle"
 
 export const Header = styled.header`
+h1{
+  color: black;
+  width: 100%;
+  height: auto;
+
+  text-align: center;
+  font-size: xx-large;
+}
   /* Cabeçalho */
   border-bottom: 0.4rem solid ${colors.third};
   display: flex;
@@ -13,6 +21,11 @@ export const Header = styled.header`
       height: 100%;
     }
   }
+  @media (max-width: 500px) {
+    h1{
+      background:green;
+    }
+  }
 `
 
 export const NavBar = styled.nav`
@@ -21,6 +34,10 @@ export const NavBar = styled.nav`
   align-items: center;
   width: 100%;
   justify-content: right;
+  position: absolute;
+  top:0;
+  right:0;
+  height:6rem;
   ul {
     list-style-type: none;
     display: flex;
